@@ -1,4 +1,4 @@
-#cpypst
+# cpypst
 Small tool to copy paste text between different machines easily via the cli. Uses a http server, so it is currently possible to copy from the browser
 
 ## Installation
@@ -9,20 +9,20 @@ Small tool to copy paste text between different machines easily via the cli. Use
 `python -m cpypst`
 - Optional: run `install.sh` to set an alias if you desire, replacing the above with just `cpypst`.
 
-##Usage
+## Usage
 - `cpypst copy <text>` - Copy text to server
 - `cpypst paste` - 'Paste' text from server to stdout, alternatively, `curl <host>`
 - `cpypst set <host>` - Sets IP address of cpypst server. Persistent.
 - `cpypst run` - Run cpypst server on machine, web interface for copying on  port `8080`
 
-##Notes
+## Notes
 - NO SECURITY, do __NOT__ expose to internet
 - Very haphazardly thrown together, look forward to the next iterations
 
-##Motivation
+## Motivation
 Ever get frustrated after trying to copy and paste text between different machines/vms in your lan via vnc clients that don't support copy and paste? Enter cpypst.
 
-##To implement
+## To implement
 - Tidy up code
 - Add proper exit handling for the server
 - Figure out how to have arguments on the same level as subcommands
